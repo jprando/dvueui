@@ -3,4 +3,4 @@ docker run --name vueUI --rm \
 -p 8080:8080 \
 --mount type=bind,source="$(pwd)"/app,target=/app \
 --detach \
-jeudi/node-vue-ui
+jprando/vueui
