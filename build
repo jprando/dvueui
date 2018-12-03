@@ -1,1 +1,1 @@
-docker build -t jeudi/node-vue-ui . 
+docker build -t jprando/vueui --pull --rm
