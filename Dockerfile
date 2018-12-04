@@ -1,11 +1,12 @@
 FROM node:carbon-alpine
 
+VOLUME [ "/app" ]
 WORKDIR /app
-
-RUN yarn global add @vue/cli
-RUN $(yarn global bin)/vue --version
 
 EXPOSE 8000
 EXPOSE 8080
 
-CMD ["vue", "ui", "--headless", "--host", "0.0.0.0", "--port", "8000"]
+RUN yarn global add @vue/cli
+
+ENTRYPOINT [ "vue" ]
+CMD [ "ui", "--headless", "--host", "0.0.0.0", "--port", "8000" ]
