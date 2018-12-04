@@ -1,0 +1,6 @@
+alias vueui='docker run --name vueUI --rm \
+--publish 8000:8000 \
+--publish 8080:8080 \
+--mount type=bind,source=$PWD,target=/app \
+--detach \
+jprando/vueui $1 $2 $3 $4 $5'
