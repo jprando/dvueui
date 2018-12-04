@@ -1,6 +1,6 @@
 FROM node:carbon-alpine
 
-VOLUME [ "/app" ]
+VOLUME [ "/home/node", "/app" ]
 WORKDIR /app
 
 EXPOSE 8000
