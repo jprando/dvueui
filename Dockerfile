@@ -19,11 +19,11 @@ RUN yarn global add vuex
 RUN yarn global add vue-router
 
 LABEL maintainer=jeudiprando@gmail.com
-LABEL vue_cli_version=3.9.3
-LABEL node_version=10.16.0
-LABEL yarn_version=1.16.0
+LABEL vue_cli_version=4.1.2
+LABEL node_version=12.14.1
+LABEL yarn_version=1.21.1
 
-ENV VUE_CLI_VERSION=3.9.3
+ENV VUE_CLI_VERSION=4.1.2
 
 ENTRYPOINT [ "vue" ]
 CMD [ "ui", "--headless", "--host", "0.0.0.0", "--port", "8000" ]

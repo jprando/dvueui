@@ -1,1 +1,1 @@
-docker build -t jprando/vueui -t jprando/vueui:3.9.3 --pull --rm .
+docker build -t jprando/vueui -t jprando/vueui:4.1.2 --pull --rm .
